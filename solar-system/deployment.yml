@@ -16,7 +16,7 @@ spec:
         app: solar-system
     spec:
       containers:
-      - image: siddharth67/solar-system:v2
+      - image: siddharth67/solar-system:v7
         name: solar-system
         ports: 
         - containerPort: 3000
