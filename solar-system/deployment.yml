@@ -18,5 +18,5 @@ spec:
       containers:
       - image: siddharth67/solar-system:v3
         name: solar-system
-        port: 
+        ports: 
         - containerPort: 3000
