@@ -5,7 +5,7 @@ metadata:
 data:
     # use white to get a Degraded message in ArgoCD
   CIRCLE_COLOR: "pink"
-  OVAL_COLOR: "green"
+  OVAL_COLOR: "lightgreen"
   SQUARE_COLOR: "orange"
   TRIANGLE_COLOR: "red"
-  RECTANGLE_COLOR: "gray"
+  RECTANGLE_COLOR: "blue"
