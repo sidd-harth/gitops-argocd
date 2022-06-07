@@ -1,6 +1,11 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: php-color-cm
+  name: moving-shape-colors
 data:
-  circleColor: "pink"  # use white to get a Degraded message in ArgoCD
+    # use white to get a Degraded message in ArgoCD
+  CIRCLE_COLOR: "pink"
+  OVAL_COLOR: "green"
+  SQUARE_COLOR: "black"
+  TRIANGLE_COLOR: "blue"
+  RECTANGLE_COLOR: "gray"
