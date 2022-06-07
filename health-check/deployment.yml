@@ -1,23 +1,23 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: pod-quota-demo
+  name: php-color-app
 spec:
   selector:
     matchLabels:
-      purpose: quota-demo
+      app: php-color-app
   replicas: 1
   template:
     metadata:
       labels:
-        purpose: quota-demo
+        app: php-color-app
     spec:
       containers:
-      - name: pod-quota-demo
-        image: siddharth67/solar-system:env2
+      - name: php-color-app
+        image: siddharth67/php-color:v1
         env:
         - name: COLOR
           valueFrom:
             configMapKeyRef:
-              name: sun-color-cm
-              key: color
+              name: php-color-cm
+              key: circle-color
