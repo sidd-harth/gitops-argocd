@@ -20,4 +20,4 @@ spec:
           valueFrom:
             configMapKeyRef:
               name: php-color-cm
-              key: circle-color
+              key: circleColor
