@@ -15,3 +15,9 @@ spec:
       containers:
       - name: pod-quota-demo
         image: nginx
+        env:
+        - name: COLOR
+          valueFrom:
+            configMapKeyRef:
+              name: sun-color-cm
+              key: color
