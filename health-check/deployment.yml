@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: pod-quota-demo
-        image: nginx
+        image: siddharth67/solar-system:env2
         env:
         - name: COLOR
           valueFrom:
