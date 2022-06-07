@@ -3,4 +3,4 @@ kind: ConfigMap
 metadata:
   name: php-color-cm
 data:
-  circleColor: "white"
+  circleColor: "pink"  # use white to get a Degraded message in ArgoCD
