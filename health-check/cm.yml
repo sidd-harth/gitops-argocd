@@ -3,4 +3,4 @@ kind: ConfigMap
 metadata:
   name: sun-color-cm
 data:
-  COLOR: "pink"
+  color: "pink"
