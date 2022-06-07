@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: php-color-app
+  name: random-shapes
 spec:
   selector:
     matchLabels:
-      app: php-color-app
+      app: random-shapes
   replicas: 1
   template:
     metadata:
       labels:
-        app: php-color-app
+        app: random-shapes
     spec:
       containers:
-      - name: php-color-app
-        image: siddharth67/php-color:v1
+      - name: random-shapes
+        image: siddharth67/php-random-shapes:v1
         env:
         - name: COLOR
           valueFrom:
