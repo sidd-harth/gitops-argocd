@@ -15,9 +15,6 @@ spec:
       containers:
       - name: random-shapes
         image: siddharth67/php-random-shapes:v1
-        env:
-        - name: COLOR
-          valueFrom:
-            configMapKeyRef:
-              name: php-color-cm
-              key: circleColor
+        envFrom:
+        - configMapRef:
+            name: moving-shapes-colors
