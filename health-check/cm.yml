@@ -2,7 +2,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: game-demo
-  annotaions: 
+  annotations: 
     a: b
 data:
   # property-like keys; each key maps to a simple value
