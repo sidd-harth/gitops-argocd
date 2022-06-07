@@ -3,4 +3,4 @@ kind: ConfigMap
 metadata:
   name: php-color-cm
 data:
-  circleColor: "pink"
+  circleColor: "white"
