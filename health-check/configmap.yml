@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: moving-shape-colors
+  name: moving-shapes-colors
 data:
     # use white to get a Degraded message in ArgoCD
   CIRCLE_COLOR: "pink"
