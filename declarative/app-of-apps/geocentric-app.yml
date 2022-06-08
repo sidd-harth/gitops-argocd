@@ -11,7 +11,7 @@ spec:
   source:
     repoURL: https://github.com/sidd-harth/test-cd.git
     targetRevision: HEAD
-    path: ./declarative/geocentric-model
+    path: ./declarative/manifests/geocentric-model
    
   destination:
     server: https://kubernetes.default.svc
