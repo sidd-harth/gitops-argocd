@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: infinite-circle-svc
+spec:
+  ports:
+  - port: 80
+    protocol: TCP
+    targetPort: 80
+  selector:
+    app: infinite-circle
+  type: NodePort
