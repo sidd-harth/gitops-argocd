@@ -1,0 +1,25 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: circle-app
+  namespace: argocd
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  project: default
+
+  source:
+    repoURL: https://github.com/codefresh-contrib/gitops-certification-examples.git
+    targetRevision: HEAD
+    path: ./declarative/circle
+   
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: circle
+
+  syncPolicy:
+    syncOptions:
+      - CreateNamespace=true  
+    automated:
+      prune: true
+      selfHeal: true
