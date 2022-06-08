@@ -9,7 +9,7 @@ spec:
   project: default
 
   source:
-    repoURL: https://github.com/codefresh-contrib/gitops-certification-examples.git
+    repoURL: https://github.com/sidd-harth/test-cd.git
     targetRevision: HEAD
     path: ./declarative/circle
    
