@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: geocentric-model
+spec:
+  selector:
+    matchLabels:
+      app: geocentric-model
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: geocentric-model
+    spec:
+      containers:
+      - name: geocentric-model
+        image: siddharth67/geocentric-model:earth
