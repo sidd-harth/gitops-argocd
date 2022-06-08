@@ -11,7 +11,7 @@ spec:
   source:
     repoURL: https://github.com/sidd-harth/test-cd.git
     targetRevision: HEAD
-    path: ./declarative/circle
+    path: ./declarative/manifests/circle
    
   destination:
     server: https://kubernetes.default.svc
