@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Release.Name }}-configmap
+data:
+  CIRCLE_COLOR: {{ .Values.color.circle }}
+  OVAL_COLOR: {{ .Values.color.oval }}
+  SQUARE_COLOR: {{ .Values.color.square }}
+  TRIANGLE_COLOR: {{ .Values.color.triangle }}
+  RECTANGLE_COLOR: {{ .Values.color.rectangle }}
