@@ -1,4 +1,4 @@
 apiVersion: v2
-name: mychart
+name: random-shapes-chart
 description: A Helm chart for Random Shape App
 version: 0.1.0
