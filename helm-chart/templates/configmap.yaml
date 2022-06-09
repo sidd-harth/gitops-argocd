@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: {{ .Release.Name }}-helm
+  name: {{ .Release.Name }}-configmap
 data:
   CIRCLE_COLOR: {{ .Values.color.circle }}
   OVAL_COLOR: {{ .Values.color.oval }}
