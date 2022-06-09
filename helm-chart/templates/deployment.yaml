@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ .Release.Name }}-helm
+  name: {{ .Release.Name }}-deploy
   labels:
     {{- include "random-shapes.labels" . | nindent 4 }}
 spec:
@@ -22,3 +22,6 @@ spec:
         - name: {{ .Chart.Name }}
           image: "{{ .Values.image.repository }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
+          envFrom:
+          - configMapRef:
+              name: {{ .Release.Name }}-configmap
