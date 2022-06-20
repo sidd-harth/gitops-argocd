@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: secret-app
+  name: secret-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: secret-app
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: secret-app
+    spec:
+      containers:
+      - image: siddharth67/sealed-secrets:v1
+        name: secret-app
+      # uncomment block to mount secret
+      #   volumeMounts:
+      #   - name: app-secret-vol
+      #     mountPath: "/app/crds"
+      #     readOnly: true
+      # volumes:
+      # - name: app-secret-vol
+      #   secret:
+      #     secretName: app-crds
