@@ -7,5 +7,5 @@ data:
   CIRCLE_COLOR: "pink"
   OVAL_COLOR: "lightgreen"
   SQUARE_COLOR: "orange"
-  TRIANGLE_COLOR: "red"
+  TRIANGLE_COLOR: "white"
   RECTANGLE_COLOR: "blue"
