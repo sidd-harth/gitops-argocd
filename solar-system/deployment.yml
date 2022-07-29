@@ -19,4 +19,4 @@ spec:
       - image: siddharth67/solar-system:v3
         name: solar-system
         ports: 
-        - containerPort: 3000
+        - containerPort: 80
