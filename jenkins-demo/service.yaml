@@ -3,12 +3,12 @@ kind: Service
 metadata:
   labels:
     app: solar-system
-  name: solar-system-serevice
+  name: solar-system-service
 spec:
   ports:
-  - port: 3000
+  - port: 80
     protocol: TCP
-    targetPort: 3000
+    targetPort: 80
   selector:
     app: solar-system
   type: NodePort
