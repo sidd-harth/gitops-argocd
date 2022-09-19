@@ -3,9 +3,8 @@ kind: ConfigMap
 metadata:
   name: moving-shapes-colors
 data:
-    # use white to get a Degraded message in ArgoCD
   CIRCLE_COLOR: "pink"
   OVAL_COLOR: "lightgreen"
   SQUARE_COLOR: "orange"
-  TRIANGLE_COLOR: "red"
-  RECTANGLE_COLOR: "blue"
+  TRIANGLE_COLOR: "red"   # use white to get a Degraded message in ArgoCD
+  RECTANGLE_COLOR: "blue" 
