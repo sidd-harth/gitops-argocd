@@ -19,6 +19,7 @@ spec:
     spec:
       containers:
       - image: siddharth67/secrets:vault
+        imagePullPolicy: Always
         name: secret-app
       # uncomment block to mount secret
         volumeMounts:
