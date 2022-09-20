@@ -15,6 +15,7 @@ spec:
       containers:
       - name: random-shapes
         image: siddharth67/php-random-shapes:v1
+        imagePullPolicy: Always
         envFrom:
         - configMapRef:
             name: moving-shapes-colors
