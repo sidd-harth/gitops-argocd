@@ -16,7 +16,7 @@ spec:
         app: solar-system
     spec:
       containers:
-      - image: siddharth67/geocentric-solar-system:v1 #siddharth67/solar-system:v3
+      - image: siddharth67/heliocentric-solar-system:v1 #siddharth67/solar-system:v3
         name: solar-system
         imagePullPolicy: Always
         ports: 
