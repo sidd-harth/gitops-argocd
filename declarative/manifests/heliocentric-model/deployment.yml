@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: heliocentric-model
+spec:
+  selector:
+    matchLabels:
+      app: heliocentric-model
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: heliocentric-model
+    spec:
+      containers:
+      - name: heliocentric-model
+        image: siddharth67/heliocentric-solar-system:v1

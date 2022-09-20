@@ -14,4 +14,4 @@ spec:
     spec:
       containers:
       - name: geocentric-model
-        image: siddharth67/geocentric-model:earth
+        image: siddharth67/geocentric-solar-system:v1

@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: square-app
+  name: heliocentric-model-no-pluto-app
   namespace: argocd
   finalizers:
     - resources-finalizer.argocd.argoproj.io
@@ -11,11 +11,11 @@ spec:
   source:
     repoURL: https://github.com/sidd-harth/test-cd.git
     targetRevision: HEAD
-    path: ./declarative/manifests/square
+    path: ./declarative/manifests/heliocentric-model-no-pluto
    
   destination:
     server: https://kubernetes.default.svc
-    namespace: square
+    namespace: heliocentric-no-pluto
 
   syncPolicy:
     syncOptions:
