@@ -21,11 +21,11 @@ spec:
       - image: siddharth67/sealed-secrets:v1
         name: secret-app
       # uncomment block to mount secret
-        volumeMounts:
-        - name: app-secret-vol
-          mountPath: "/app/crds"
-          readOnly: true
-      volumes:
-      - name: app-secret-vol
-        secret:
-          secretName: app-crds
+#         volumeMounts:
+#         - name: app-secret-vol
+#           mountPath: "/app/crds"
+#           readOnly: true
+#       volumes:
+#       - name: app-secret-vol
+#         secret:
+#           secretName: app-crds
