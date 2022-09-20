@@ -18,7 +18,7 @@ spec:
         app: secret-app
     spec:
       containers:
-      - image: siddharth67/sealed-secrets:v1
+      - image: siddharth67/secrets:bitnami
         name: secret-app
       # uncomment block to mount secret
         volumeMounts:
