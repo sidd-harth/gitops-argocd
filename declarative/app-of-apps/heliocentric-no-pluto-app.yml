@@ -9,7 +9,7 @@ spec:
   project: default
 
   source:
-    repoURL: https://github.com/sidd-harth/test-cd.git
+    repoURL: http://165.22.209.118:3000/siddharth/gitops-argocd.git
     targetRevision: HEAD
     path: ./declarative/manifests/heliocentric-model-no-pluto
    
