@@ -6,7 +6,7 @@ spec:
   selector:
     matchLabels:
       app: geocentric-model
-  replicas: 1
+  replicas: 2
   template:
     metadata:
       labels:
