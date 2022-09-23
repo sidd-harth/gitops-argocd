@@ -6,7 +6,7 @@ spec:
   selector:
     matchLabels:
       app: heliocentric-model-no-pluto
-  replicas: 1
+  replicas: 2
   template:
     metadata:
       labels:
