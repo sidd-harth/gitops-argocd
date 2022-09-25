@@ -16,7 +16,7 @@ spec:
         app: solar-system
     spec:
       containers:
-      - image: siddharth67/solar-system:16-4220d07e5c5bb6ad445f717e8a86b4f0bd37b763
+      - image: siddharth67/solar-system:17-1f93e05fb7def5ae1817bdd401bc1d7a10320f9f
         name: solar-system
         ports: 
         - containerPort: 80
