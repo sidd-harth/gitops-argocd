@@ -20,5 +20,8 @@ spec:
         name: solar-system
         ports: 
         - containerPort: 80
+        envFrom:
+          secretRef:
+            - mysecret
       imagePullSecrets:
       - name: regcred
