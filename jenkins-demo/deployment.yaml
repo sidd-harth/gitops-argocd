@@ -16,7 +16,7 @@ spec:
         app: solar-system
     spec:
       containers:
-      - image: spisey/solar-system:12-ae803dac113ecfbedd28140bab67ae762874df39
+      - image: spisey/solar-system:13-4374b95b607e24532a648429633682d8cfce299f
         name: solar-system
         ports: 
         - containerPort: 80
