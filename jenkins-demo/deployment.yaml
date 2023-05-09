@@ -22,6 +22,6 @@ spec:
         - containerPort: 80
         envFrom:
         - secretRef:
-          name: mysecret
+            name: mysecret
       imagePullSecrets:
       - name: regcred
